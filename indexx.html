@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> O decodificador </title>
+    <link rel="stylesheet" href="./Styles/stylee.css">
+</head>
+<body>
+    <main class="main-login">
+        <div class="left-login-high">
+            <img class="left-login-high-img" src="./Assets/Vector.svg" alt="">  
+        </div>
+        <div class="left-login">
+            <div class="left-login-text">
+                <textarea class="left-login-text-inserir" name="text" id="text" cols="30" rows="10" placeholder=" Digite seu texto aqui..."></textarea>
+            </div> 
+            <div class="left-login-aviso">
+                <p class="left-login-aviso-pgp">
+                    <img class="left-login-aviso-pgp-img" src="./Assets/icon-exclamacao.svg" alt="">
+                    Apenas letras minúsculas e sem acentução.
+                </p>
+                <div class="left-login-btn">
+                        <button onclick="criptografar()" class="left-login-btn-cri"> Criptografar </button>                   
+                        <button onclick="descriptografar()" class="left-login-btn-discri"> Descriptografar</button>
+                </div> 
+            </div>      
+        </div>         
+        <div class="right-login">
+            <div id = "textSaida" class="card-login">                
+                <div class="textfield">
+                    <img class="textfield-img" src="./Assets/High quality products 1 1.svg" alt="">            
+                </div>
+                <div class="textfield-text">
+                    <h2 class="textfield-title"> Nenhuma mensagem <br>encontrada </h2>
+                    <p class="textfield-pgp" > Digite um texto que você deseja <br>criptografar ou descriptografar. </p>    
+                </div>    
+            </div>  
+        </div>
+    </main>
+    <footer class="rodape">
+        <p class="rodape-msg"> Made with by 
+            <a href="https://github.com/Alves0528"> Luis Felipe</a>
+        </p>
+    </footer>
+    <script src="./scripts/script.js"></script>
+</body>
+</html>
