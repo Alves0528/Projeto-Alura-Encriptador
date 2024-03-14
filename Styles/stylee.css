@@ -371,6 +371,7 @@ body {
 
     .left-login-aviso-pgp {
         font-size: 2rem;
+        display: block;
     }
 
     .left-login-btn {
