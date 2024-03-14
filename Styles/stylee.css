@@ -118,7 +118,7 @@ body {
     justify-content: center;
     align-items: center ;
     flex-direction: column;
-    padding: 100px 13px;
+    padding: 200px 13px;
     background-color: var(--Branco);
     border-radius: 32px;
     box-sizing: border-box;
@@ -182,6 +182,18 @@ body {
 
 @media only screen and (max-width: 480px) {
 
+    body {
+        height: 100vh;
+    }
+
+    .left-login-high {
+        margin: 1em;
+        height: 10vh;
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+    }
+
     .main-login {
         flex-direction: column;
         align-items: center;
@@ -191,7 +203,7 @@ body {
     }
 
     .left-login-high {
-        height: 10vh;
+        height: 5vh;
     }
 
     .left-login {
@@ -205,7 +217,7 @@ body {
 
     .left-login-text-inserir {
         height: 100%;
-        font-size: 1.5rem;
+        font-size: 2rem;
         width: 100%;
     }
 
@@ -213,10 +225,11 @@ body {
         display: flex;
         flex-direction: column;
         width: 100%;
+        gap: 1rem;
     }
 
     .left-login-aviso-pgp {
-        font-size: 0.75rem;
+        font-size: 0.rem;
     }
 
     .left-login-btn {
@@ -229,15 +242,15 @@ body {
 
     .left-login-btn-cri {
         width: 100%;
-        height: 3rem;
-        font-size: 0.8rem;
+        height: 5rem;
+        font-size: 1rem;
         border: none;
     }
 
     .left-login-btn-discri {
         width: 100%;
-        height: 3rem;
-        font-size: 0.8rem;  
+        height: 5rem;
+        font-size: 1rem;  
     }
 
     .right-login{
@@ -253,6 +266,26 @@ body {
         padding: 5% 5%;
     }
     
+    .textfield-text {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        padding: 25% 0 0 0;
+    }
+
+    .textfield-img {
+        display: none;
+    }
+    
+
+    .textfield-title {
+        font-size: 2rem;
+    }
+
+    .textfield-pgp {
+        font-size: 1rem;
+    }
 
     #texto {
         width: 100%;
@@ -267,91 +300,148 @@ body {
         height: 3rem;
         font-size: 0.8rem;  
             
+    }    
+    .rodape {
+        height: 5vh;
     }
-
-    .textfield-title, .textfield-pgp {
-        font-size: 0.95rem;
-    }
-
-    .textfield-img {
-        display: none;
-    }
-    
    
-    
 }
 
-/*@media only screen and (min-width: 481px) and (max-width: 800px) {
-       
+@media only screen and (min-width: 481px) and (max-width: 800px) {
+    
+    body {
+        height: 100vh;
+    }
+
+    
     .main-login {
         flex-direction: column;
         align-items: center;
         width: 100%;
         justify-content: center;
+        height: 90vh;
     }
 
-    .left-login-text {
-        margin: 0 0 10%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+    .left-login-high {
+        margin: 1em;
+        height: 10vh;
         width: 90%;
-        height: 50%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .left-login-high-img {
+        width: 31.09px;
+        height: 50.58px;
+        top: 73.42px;
+        left: 40px;
+    }
+
+    .left-login {
+        height: 70vh;
+        width: 90%;
+        display: flex;
+        align-items: start;
     }
 
     .left-login-text {
-        font-size: 2rem;
+        height: 100%;
+        margin: 3rem 0;   
+    }
+
+    .left-login-text-inserir {
+        height: 100%;
+        width: 100%;
+        font-size: 3.5rem;
     }
 
     .left-login-aviso {
         display: flex;
         flex-direction: column;
-        gap: 1.25rem;
-    }
-
-    .left-login-aviso-pgp  {
-        font-size: 1rem;
-    }
-
-    .left-login-btn  {
-        margin: 0;
         width: 100%;
-        display: flex;
-        flex-direction: row;
         gap: 1rem;
     }
 
-    .left-login-btn-cri, .left-login-btn-discri {
+    .left-login-aviso-pgp {
+        font-size: 2rem;
+    }
+
+    .left-login-btn {
+        margin: 0;
         width: 100%;
-        height: 3.5rem;
-        border-radius: 20px;
-        font-size: auto;
+        display: flex;
+        gap: 1rem;
+    }
+
+    .left-login-btn-cri {
+        width: 100%;
+        height: 7rem;
+        font-size: 2rem;
         border: none;
     }
 
-    .right-login{
-        margin: 0;
-        width: 90%;
-        height: 30%;
-        font-size: 1rem;
-        padding: 3%;
+    .left-login-btn-discri {
+        width: 100%;
+        height: 7rem;
+        font-size: 2rem;  
     }
 
-    .card-login, #texto{
-        height: 70%;
+    .right-login{
         width: 90%;
+        height: 20vh;
+        padding: 4% 0 0 0;
+    }
+
+    .card-login {
+        width: 100%;
+        height: 100%;
+        display: block;
+        flex-direction: column;
+        padding: 2% 2%;
+    }
+
+    .textfield-text {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
     }
 
     .textfield-img {
         display: none;
     }
 
-    .btn-copiar {
-       width: 60%;
-       height: 3.5rem;
-       border-radius: 20px;
-       font-size: auto;
-       border: none;
+    .textfield-title {
+        font-size: 3rem;
     }
-  } */
-  
+
+    .textfield-pgp {
+        font-size: 2rem;
+    }
+
+    #texto {
+        width: 100%;
+        height: 70%;
+        font-size: 1.5rem;
+        background-color: transparent;
+       
+    }
+
+    .btn-copiar {
+        width: 100%;
+        height: 3rem;
+        font-size: 0.8rem;  
+            
+    }
+    
+    .rodape {
+        height: 10vh;
+    }
+    
+    .rodape {
+        font-size: 2rem;
+    }
+}
